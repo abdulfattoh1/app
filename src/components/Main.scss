@@ -1,0 +1,10 @@
+.main {
+  margin-top: 3rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    &_right {
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.category__list {
+  margin-top: 30px;
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &_img {
+    background: #fbfbfb;
+    padding: 15px 4px;
+    width: max-content;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+
+    &Discount {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      color: #ffffff !important;
+      background: #46a358;
+      padding: 6px 8px;
+    }
+
+    & span {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-columns: repeat(3, 0.2fr);
+      justify-content: center;
+      font-size: 18px;
+      background: #ffffff;
+      border-radius: 4px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: absolute;
+      left: 0;
+      bottom: -14%;
+      width: 100%;
+      transition: 0.5s;
+    }
+    &:hover span {
+      transition: 0.5s;
+      bottom: 0;
+    }
+    &Icon {
+      cursor: pointer;
+      &Active {
+        color: red;
+      }
+      &BuyActive {
+        color: #46a358;
+      }
+    }
+  }
+  &_des {
+    & img {
+      width: max-content;
+      height: 250px;
+    }
+    & h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #3d3d3d;
+      margin-top: 12px;
+    }
+    &Price {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 16px;
+      color: #46a358;
+    }
+    &Highlight {
+      display: flex;
+      width: 100%;
+      & span {
+        & strike {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 16px;
+          color: #a5a5a5;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

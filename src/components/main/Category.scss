@@ -1,0 +1,25 @@
+.category {
+  width: 260px;
+
+  background: #fbfbfb;
+  padding: 14px 18px;
+  &__container {
+    &_item {
+      & ul {
+        padding-left: 13px;
+        & li {
+          display: flex;
+          justify-content: space-between;
+
+          font-size: 15px;
+          line-height: 40px;
+          &:hover {
+            font-style: normal;
+            font-weight: 700;
+            color: #46a358;
+          }
+        }
+      }
+    }
+  }
+}
